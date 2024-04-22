@@ -1,4 +1,14 @@
+header {
+    text-align: center;
+}
+
 .howto {
     margin: 20px;
     border: 2px solid blue;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
 }
