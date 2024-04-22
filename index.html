@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Engineers Howtos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -12,47 +13,47 @@
     </header>
     <div>
         <section>
-            <article>
+            <article class="howto">
                 <h2>C Dynamic libraries</h2>
                 <p>gcc *.c -c -fPIC</p>
                 <p>gcc *.o -shared -o liball.so</p>
                 <p>Ressources: <a href="https://medium.com/@The_Mad_Zaafa/creating-and-using-dynamic-libraries-c-a9d344822ed0">Here</a></p>
             </article>
-            <article>
+            <article class="howto">
                 <h2>Print without newline in python</h2>
                 <p>print("Hello World", end="")</p>
                 <p>Ressources: <a href="https://blog.enterprisedna.co/python-print-without-newline-easy-step-by-step-guide/">Here</a></p>
             </article> 
-            <article>
+            <article class="howto">
                 <h2>Print to stderr in Python</h2>
                 <p>import sys</p>
                 <p>print("Hello World", file=sys.stderr)</p>
                 <p>Ressources: <a href="https://blogboard.io/blog/knowledge/python-print-to-stderr/">Here</a></p>
             </article>
-            <article>
+            <article class="howto">
                 <h2>Compile a c file without linking</h2>
                 <p>gcc -c file</p>
                 <p>The result is a .o file</p>
             </article>
-            <article>
+            <article class="howto">
                 <h2>Search files in the current dir only</h2>
                 <p>find "." -maxdepth 1 -name "*"</p>
             </article>
-            <article>
+            <article class="howto">
                 <h2>Count line number in a file</h2>
                 <p>wc -l filename</p>
                 <p>Ressources: <a href="https://www.tutorialspoint.com/count-lines-in-a-file-using-linux-bash">Here</a></p>
             </article>
-            <article>
+            <article class="howto">
                 <h2>Display current dir with find like ls</h2>
                 <p>find ./* -prune -print</p>   
             </article>
-            <article>
+            <article class="howto">
                 <h2>How to install Rust on Mac</h2>
                 <p>Run curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh<p>
                 <p>Ressources : <a href="https://www.rust-lang.org/tools/install">Here</a></p>
             </article>
-            <article>
+            <article class="howto">
                 <h2>How to create a symbolic link from node installation location to /usr/bin/node ?</h2>
                 <p>Run sudo ln -s /root/.nvm/versions/node/v20.12.0/bin/node /usr/bin/node</p>
             </article>
