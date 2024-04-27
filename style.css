@@ -9,6 +9,11 @@ header {
     padding: 10px;
 }
 
+.search {
+    display: flex;
+    justify-content: end;
+}
+
 footer {
     text-align: center;
 }
