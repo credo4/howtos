@@ -61,6 +61,12 @@
                 <h2>How to create a symbolic link from node installation location to /usr/bin/node ?</h2>
                 <p>Run sudo ln -s /root/.nvm/versions/node/v20.12.0/bin/node /usr/bin/node</p>
             </article>
+            <article class="howto">
+                <h2>How to securely copy a file to a server with scp ?</h2>
+                <p>scp -i authkeyfile -o StrictHostKeyChecking="no" filetocopyfile username@host:target</p>
+                <p>Example : scp -i /root/.ssh/id_rsa -o StrictHostKeyChecking="no" al@8.8.8.8:/</p>
+                <p>Ressources : <a href="https://linux.die.net/man/1/scp">scp man page</a></p>
+            </article>
         </section>
     </div>
     <footer>
