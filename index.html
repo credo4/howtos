@@ -73,8 +73,17 @@
                 <p>service nginx start</p>
             </article>
             <article class="howto">
-                <h2>How to request a URL with curl</h2>
+                <h2>How to send a request to a URL with curl</h2>
                 <p>curl example.com</p>
+            </article>
+            <article class="howto">
+                <h2>How to send a request to a URL with urllib</h2>
+                <p>
+                    import urllib.request
+                    req = urllib.request.Request("example.com")
+                    with urllib.request.urlopen(req) as response:
+                        resp = response.read()
+                </p>
             </article>
             <article class="howto">
                 <h2>How to get my ubuntu version ?</h2>
