@@ -10,4 +10,4 @@ If you think you can help the projects, comment with ideas or reach out on Twitt
 
 Let's do this...
 
-Credo adding some stuff 
+Credo adding some stuff for contribution
