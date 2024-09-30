@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineers Howtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> Howtos for Software Engineers and Computer Scientist</h1>
+        <p>Find how to do simple tasks in your software engineering journey and share your tips with other enginners.</p>
+    </header>
+    <div>
+        <section>
+            <div class="search">
+                <input id="search" type="text">
+                <button>Search</button>
+            </div>
+            <article class="howto">
+                <h2>C Dynamic libraries</h2>
+                <p>gcc *.c -c -fPIC</p>
+                <p>gcc *.o -shared -o liball.so</p>
+                <p>Ressources: <a href="https://medium.com/@The_Mad_Zaafa/creating-and-using-dynamic-libraries-c-a9d344822ed0">Here</a></p>
+            </article>
+            <article class="howto">
+                <h2>Print without newline in python</h2>
+                <p>print("Hello World", end="")</p>
+                <p>Ressources: <a href="https://blog.enterprisedna.co/python-print-without-newline-easy-step-by-step-guide/">Here</a></p>
+            </article> 
+            <article class="howto">
+                <h2>Print to stderr in Python</h2>
+                <p>import sys</p>
+                <p>print("Hello World", file=sys.stderr)</p>
+                <p>Ressources: <a href="https://blogboard.io/blog/knowledge/python-print-to-stderr/">Here</a></p>
+            </article>
+            <article class="howto">
+                <h2>Compile a c file without linking</h2>
+                <p>gcc -c file</p>
+                <p>The result is a .o file</p>
+            </article>
+            <article class="howto">
+                <h2>Search files in the current dir only</h2>
+                <p>find "." -maxdepth 1 -name "*"</p>
+            </article>
+            <article class="howto">
+                <h2>Count line number in a file</h2>
+                <p>wc -l filename</p>
+                <p>Ressources: <a href="https://www.tutorialspoint.com/count-lines-in-a-file-using-linux-bash">Here</a></p>
+            </article>
+            <article class="howto">
+                <h2>Display current dir with find like ls</h2>
+                <p>find ./* -prune -print</p>   
+            </article>
+            <article class="howto">
+                <h2>How to install Rust on Mac</h2>
+                <p>Run curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh<p>
+                <p>Ressources : <a href="https://www.rust-lang.org/tools/install">Here</a></p>
+            </article>
+            <article class="howto">
+                <h2>How to create a symbolic link from node installation location to /usr/bin/node ?</h2>
+                <p>Run sudo ln -s /root/.nvm/versions/node/v20.12.0/bin/node /usr/bin/node</p>
+            </article>
+            <article class="howto">
+                <h2>How to securely copy a file to a server with scp ?</h2>
+                <p>scp -i authkeyfile -o StrictHostKeyChecking="no" filetocopyfile username@host:target</p>
+                <p>Example : scp -i /root/.ssh/id_rsa -o StrictHostKeyChecking="no" al@8.8.8.8:/</p>
+                <p>Ressources : <a href="https://linux.die.net/man/1/scp">scp man page</a></p>
+            </article>
+            <article class="howto">
+                <h2>How to install and run nginx ?</h2>
+                <p>apt-get install nginx</p>
+                <p>service nginx start</p>
+            </article>
+            <article class="howto">
+                <h2>How to send a request to a URL with curl</h2>
+                <p>curl example.com</p>
+            </article>
+            <article class="howto">
+                <h2>How to send a request to a URL with urllib</h2>
+                <p>
+                    import urllib.request
+                    req = urllib.request.Request("example.com")
+                    with urllib.request.urlopen(req) as response:
+                        resp = response.read()
+                </p>
+            </article>
+            <article class="howto">
+                <h2>How to get my ubuntu version ?</h2>
+                <p>lsb_release -a</p>
+            </article>
+            <article class="howto">
+                <h2>How to get use requests to make a request in Python ?</h2>
+                <p>
+                    rep = requests.get(url)
+                    rep = rep.json()
+                </p>
+            </article>
+            <article class="howto">
+                <h2>How to send error 404 with flask in a request ?</h2>
+                <p>
+                    abort(404)
+                </p>
+            </article>
+            <article class="howto">
+                <h2>How to init a flask app</h2>
+                <p>
+                    from flask import Flask, jsonify
+                    app = Flask(__name__)
+                </p>
+            </article>
+            <article class="howto">
+                <h2>How to select element in JQUERY</h2>
+                <p>
+                    $("tag")
+                </p>
+            </article>
+            <article class="howto">
+                <h2>How to change the content text of an element</h2>
+                <p>
+                    $("tag").text("New text")
+                </p>
+            </article>
+            <article class="howto">
+                <h2>How to show all available stored procedure on mysql db</h2>
+                <p>
+                    SHOW PROCEDURE STATUS WHERE db='mydb';
+                </p>
+            </article>
+            <article class="howto">
+                <h2>How to show all available db on mongodb</h2>
+                <p>
+                    show dbs
+                </p>
+            </article>
+            <article class="howto">
+                <h2>How to show all documents on mongodb db collection mydocs</h2>
+                <p>
+                    db.mydocs.find({})
+                </p>
+            </article>
+            <article class="howto">
+                <h2>Add document with name = "Bitcoin" on mongodb db collection mydocs</h2>
+                <p>
+                    db.mydocs.insertOne({name: "Bitcoin"})
+                </p>
+            </article>
+            <article class="howto">
+                <h2>How to show all documents on mongodb db collection mydocs with name = "Bitcoin"</h2>
+                <p>
+                    db.mydocs.find({name: "Bitcoin"})
+                </p>
+            </article>
+            <article class="howto">
+                <h2>How to show all documents on mongodb db collection mydocs with name = "Bitcoin" and number = 3</h2>
+                <p>
+                    db.mydocs.find({name: "Bitcoin", number: 3})
+                </p>
+            </article>
+        </section>
+    </div>
+    <footer>
+        <p>Step by step by with &hearts; by Alphonse <a href="https://github.com/AlphonseMehounme/">@mehounme</a></p>
+        <p><a href="https://github.com/AlphonseMehounme/howtos/">Contribute on Github</a></p>
+    </footer>
+</body>
+</html>

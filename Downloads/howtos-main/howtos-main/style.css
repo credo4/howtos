@@ -1,0 +1,19 @@
+header {
+    text-align: center;
+}
+
+.howto {
+    margin: 20px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.search {
+    display: flex;
+    justify-content: end;
+}
+
+footer {
+    text-align: center;
+}
